@@ -1,3 +1,8 @@
 @charset 'UTF-8';
 
-@import 'base/**';
+@import 'tool/**';
+@import 'base/vars.scss';
+@import 'base/reset.scss';
+@import 'base/margin.scss';
+@import 'base/base.scss';
+@import 'module/**';

@@ -2,7 +2,7 @@
 'use strict';
 
 (function () {
-  alert('hello, world');
+  console.log('hello world');
 })();
 
 },{}]},{},[1]);

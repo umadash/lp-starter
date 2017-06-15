@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+$spacing: 4px;
+
+@for $i from 1 to 21 {
+ // Margin
+ .mg#{$i}x { margin: $spacing * $i; }
+ .mgTop#{$i}x { margin-top: $spacing * $i; }
+ .mgBottom#{$i}x { margin-bottom: $spacing * $i; }
+ .mgLeft#{$i}x { margin-left: $spacing * $i; }
+ .mgRight#{$i}x { margin-right: $spacing * $i; }
+
+ // Padding
+ .pd#{$i}x { padding: $spacing * $i; }
+ .pdTop#{$i}x { padding-top: $spacing * $i; }
+ .pdBottom#{$i}x{ padding-bottom: $spacing * $i; }
+ .pdLeft#{$i}x { padding-left: $spacing * $i; }
+ .pdRight#{$i}x{ padding-right: $spacing * $i; }
+}
