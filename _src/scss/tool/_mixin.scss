@@ -91,9 +91,9 @@
 */
 @mixin retina-bg($src, $width, $height, $dpr: 2) {
   background-image: url(#{$src});
-  width: $width / $dpr;
-  height: $height / $dpr;
-  background-size: ($width / $dpr) ($height / $dpr);
+  width: ($width / $dpr) + px;
+  height: ($height / $dpr) + px;
+  background-size: ($width / $dpr) + px ($height / $dpr) + px;
 }
 
 
