@@ -1,11 +1,12 @@
 // reference: https://github.com/danro/jquery-easing/blob/master/jquery.easing.js
 window.Easing = {
   linear: (t, b, c, d) => {
-    return  c * t + b;
+    return  c * (t / d) + b;
   },
 
   easeInQuad: (t, b, c, d) => {
-    return c * (t /= d) * t + b;
+    t /= d;
+    return c * t * t + b;
   },
   easeOutQuad: (t, b, c, d) => {
     return -c *(t/=d)*(t-2) + b;
@@ -28,13 +29,13 @@ window.Easing = {
   },
 
 
-  easeInQuart:  (t, b, c, d) =>  {
+  easeInQuart: (t, b, c, d) =>  {
   return c*(t/=d)*t*t*t + b;
   },
-  easeOutQuart:  (t, b, c, d) =>  {
+  easeOutQuart: (t, b, c, d) =>  {
   return -c * ((t=t/d-1)*t*t*t - 1) + b;
   },
-  easeInOutQuart:  (t, b, c, d) =>  {
+  easeInOutQuart: (t, b, c, d) =>  {
   if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
   return -c/2 * ((t-=2)*t*t*t - 2) + b;
   },
