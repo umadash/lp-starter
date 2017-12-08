@@ -1,0 +1,21 @@
+.footerBlack {
+  padding: 32px 0 16px;
+  background-color: #000;
+
+  .listSnsWhite {
+    margin: 0 0 24px;
+  }
+
+  &_copyright {
+    color: #fff;
+    text-align: center;
+    @include font-size(9);
+    font-weight: bold;
+    @include font-ubuntu;
+    line-height: 2;
+
+    >a {
+      color: #fff;
+    }
+  }
+}
