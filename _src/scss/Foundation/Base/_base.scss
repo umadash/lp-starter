@@ -20,21 +20,11 @@ body {
   // 参考: http://creator.dwango.co.jp/14128.html
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: unset;
+
+  // iOSにおける選択色をなくす 
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 a {
-  color: #00f;
   text-decoration: underline;
-
-  &:hover {
-    color: #f00;
-  }
-  
-  &:visited {
-    color: #3ea5f8;
-  }
-  
-  &:active {
-    color: #0ff;
-  }
 }
