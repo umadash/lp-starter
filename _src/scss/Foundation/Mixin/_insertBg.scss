@@ -1,0 +1,9 @@
+@mixin insert-bg($src, $width, $height, $dpr: 1) {
+    $w: round($width / $dpr);
+    $h: round($height / $dpr);
+    width: $w;
+    height: $h;
+    background-size: $w $h;
+    background-image: url(#{$src});
+    background-repeat: no-repeat;
+}

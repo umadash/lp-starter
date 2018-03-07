@@ -1,4 +1,4 @@
-opacity(value) {
-   opacity: value
-   filter: alpha(opacity=(value * 100))
+@mixin opacity($value) {
+   opacity: value;
+   filter: alpha(opacity=($value * 100));
 }
