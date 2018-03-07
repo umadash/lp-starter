@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/** NotoSansJp **/
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjp.css');
+$font_family_noto: 'Noto Sans JP', sans-serif;
+
+@mixin font-noto-black {
+    font-family: $font_family_noto;
+    font-weight: 900;
+}
+
+@mixin font-noto-bold {
+    font-family: $font_family_noto;
+    font-weight: 700;
+}
+
+@mixin font-noto-medium {
+    font-family: $font_family_noto;
+    font-weight: 500;
+}
+
+@mixin font-noto-thin {
+    font-family: $font_family_noto;
+    font-weight: 300;
+}
+
+
+/** MavenPro **/
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:500,700,900');
+$font_family_maven: 'Maven Pro', sans-serif;
+
+@mixin font-maven-black {
+    font-family: $font_family_maven;
+    font-weight: 900;
+}
+
+@mixin font-maven-bold {
+    font-family: $font_family_maven;
+    font-weight: 700;
+}
+
+@mixin font-maven-medium {
+    font-family: $font_family_maven;
+    font-weight: 500;
+}
+
+
+/** Roboto **/
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+$font_family_roboto: 'Roboto', sans-serif;
+
+@mixin font-roboto-medium {
+    font-family: $font_family_roboto;
+    font-weight: 500;
+}
