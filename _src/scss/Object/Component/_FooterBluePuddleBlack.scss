@@ -6,12 +6,12 @@
     margin: 0 0 24px;
   }
 
+
   &_copyright {
     color: #fff;
     text-align: center;
     @include font-size(9);
     font-weight: bold;
-    @include font-ubuntu;
     line-height: 2;
 
     >a {

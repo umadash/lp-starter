@@ -8,10 +8,6 @@
     width: calc(25% - 8px);
     margin: 0 4px;
     height: 60px;
-
-    @include max-screen($BP_DESKTOP) {
-      height: 36px;
-    }
   }
 }
 
@@ -20,19 +16,12 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @include min-screen($BP_DESKTOP) {
-    &:hover {
-      transition: filter .2s linear;
-      filter: brightness(.7);
-    }
-  }
-
   &-facebook {
     background-image: url('../img/icon_facebook.svg');
     background-size: 17px 30px;
     background-color: #4c72bb;
 
-    @include max-screen($BP_DESKTOP) {
+    @include mq-small {
       background-size: 10px 17px;
     }
   }
@@ -41,7 +30,7 @@
     background-size: 32px 26px;
     background-color: #1fa0e4;
 
-    @include max-screen($BP_DESKTOP) {
+    @include mq-small {
       background-size: 19px 15px;
     }
   }
@@ -50,7 +39,7 @@
     background-size: 40px 32px;
     background-color: #017fde;
 
-    @include max-screen($BP_DESKTOP) {
+    @include mq-small {
       background-size: 19px 18px;
     }
   }
@@ -59,7 +48,7 @@
     background-size: 54px 21px;
     background-color: #00c300;
 
-    @include max-screen($BP_DESKTOP) {
+    @include mq-small {
       background-size: 31px 12px;
     }
   }
