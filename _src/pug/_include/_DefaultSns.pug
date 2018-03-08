@@ -1,13 +1,14 @@
-ul.listSns
-  li.listSnsItem.listSnsItem-facebook
-    a(href="http://www.facebook.com/share.php?u=${url}" target="_blank" onClick="window.open(encodeURI(decodeURI(this.href)), 'sharewindow', 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!'); return false;") 
+mixin Sns($url = "デフォルトのURL", $text = "デフォルトのテキスト", $hashtags_pc = "", $hashtags_sp = "")
+  ul.listSns
+    li.listSnsItem.listSnsItem-facebook
+      a(href="http://www.facebook.com/share.php?u="+$url target="_blank" onClick="window.open(encodeURI(decodeURI(this.href)), 'sharewindow', 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!'); return false;")
 
-  li.listSnsItem.listSnsItem-twitter
-    a(href="twitter://post?message=$text $url") 
+    li.listSnsItem.listSnsItem-twitter
+      include ./_TwitterPost.pug
+      +TwitterPost($text, $url, $hashtags_pc, $hashtags_sp)
 
-  li.listSnsItem.listSnsItem-hatena
-    a(href="http://b.hatena.ne.jp/add?mode=confirm&title=$text &url=$url" target="_blank")
+    li.listSnsItem.listSnsItem-hatena
+      a(href="http://b.hatena.ne.jp/add?mode=confirm&title="+$text+"&url="+$url target="_blank")
 
-  li.listSnsItem.listSnsItem-line
-    a(href="http://line.me/R/msg/text/?$text $url" target="_blank")
-
+    li.listSnsItem.listSnsItem-line.only-small
+      a(href="http://line.me/R/msg/text/?"+$text+" "+$url target="_blank")

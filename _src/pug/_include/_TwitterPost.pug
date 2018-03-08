@@ -1,0 +1,5 @@
+mixin TwitterPost($text, $url, $hashtags_pc = "", $hashtags_sp = "", $label = '')
+    a.only-medium(href="http://twitter.com/share?text="+$text+"&amp;url="+$url+"&amp;hashtags="+$hashtags_pc onClick="window.open(encodeURI(decodeURI(this.href)), 'sharewindow', 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!'); return false;")
+        =$label
+    a.only-small(href="twitter://post?message="+$text+" "+$url+" "+$hashtags_sp)
+        =$label
