@@ -1,20 +1,16 @@
 'use strict';
 
 const gulp = require("gulp");
-const watch = require('gulp-watch');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const sassGlob = require('gulp-sass-glob');
 const pleeease = require('gulp-pleeease');
 const browserSync = require('browser-sync');
-const readConfig = require('read-config');
-const source = require('vinyl-source-stream');
 const runSequence = require("run-sequence");
-
+const readConfig = require('read-config');
 const webpackStream = require("webpack-stream");
 const webpack = require("webpack");
 const webpackConfig = require("./webpack.config");
-
 
 // 定数
 const SRC = './_src';
@@ -22,6 +18,11 @@ const CONFIG = './_src/config';
 const PUBLIC = './public';
 const BASE_PATH = '';
 const DEST = `${PUBLIC}${BASE_PATH}`;
+
+// js
+gulp.task('js', () => {
+  return webpackStream(webpackConfig, webpack).pipe(gulp.dest('public/js'));
+});
 
 // html
 gulp.task('pug', () => {
@@ -47,11 +48,6 @@ gulp.task('sass', () => {
 });
 gulp.task('css', ['sass']);
 
-// js
-gulp.task('js', () => {
-  return webpackStream(webpackConfig, webpack).pipe(gulp.dest('public/js'));
-});
-
 // browser-sync
 gulp.task('browser-sync', () => {
   browserSync({
@@ -60,11 +56,9 @@ gulp.task('browser-sync', () => {
     },
     startPath: ``,
   });
-  watch([
-    `${SRC}/pug/**/*.pug`,
-  ], ['pug', browserSync.reload]);
-  watch([`${SRC}/scss/**/*.scss`], ['sass', browserSync.reload]);
-  watch([`${SRC}/js/**/*.js`], ['js', browserSync.reload]);
+  gulp.watch([`${SRC}/pug/**/*.pug`], ['pug', browserSync.reload]);
+  gulp.watch([`${SRC}/scss/**/*.scss`], ['sass', browserSync.reload]);
+  gulp.watch([`${SRC}/js/**/*.js`], ['js', browserSync.reload]);
 });
 gulp.task('serve', ['browser-sync']);
 
