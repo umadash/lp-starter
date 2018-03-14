@@ -21,8 +21,12 @@ const DEST = `${PUBLIC}${BASE_PATH}`;
 
 // js
 gulp.task('js', () => {
-  return webpackStream(webpackConfig, webpack).pipe(gulp.dest('public/js'));
+  return gulp.src(`${SRC}/ts/**/*.ts`)
+    .pipe(plumber())
+    .pipe(webpackStream(webpackConfig, webpack))
+    .pipe(gulp.dest('public/js'));
 });
+
 
 // html
 gulp.task('pug', () => {
