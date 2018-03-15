@@ -3,6 +3,7 @@
 const gulp = require("gulp");
 const pug = require('gulp-pug');
 const sass = require('gulp-sass');
+const plumber = require('gulp-plumber');
 const sassGlob = require('gulp-sass-glob');
 const pleeease = require('gulp-pleeease');
 const browserSync = require('browser-sync');
@@ -62,7 +63,7 @@ gulp.task('browser-sync', () => {
   });
   gulp.watch([`${SRC}/pug/**/*.pug`], ['pug', browserSync.reload]);
   gulp.watch([`${SRC}/scss/**/*.scss`], ['sass', browserSync.reload]);
-  gulp.watch([`${SRC}/js/**/*.js`], ['js', browserSync.reload]);
+  gulp.watch([`${SRC}/ts/**/*.ts`], ['js', browserSync.reload]);
 });
 gulp.task('serve', ['browser-sync']);
 

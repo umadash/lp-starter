@@ -2,6 +2,7 @@
   "devDependencies": {
     "@types/jquery": "^3.2.16",
     "@types/node": "^9.4.6",
+    "@types/pixi.js": "^4.7.2",
     "awesome-typescript-loader": "^5.0.0-1",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
@@ -9,7 +10,7 @@
     "css-loader": "^0.28.10",
     "gulp": "^3.9.1",
     "gulp-pleeease": "^2.0.2",
-    "gulp-plumber": "^1.1.0",
+    "gulp-plumber": "^1.2.0",
     "gulp-pug": "^3.0.4",
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "jquery-lazyload": "^1.9.7"
+    "jquery-lazyload": "^1.9.7",
+    "pixi.js": "^4.7.0"
   }
 }
