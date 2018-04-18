@@ -18,8 +18,8 @@ body {
 
   // アンチエイリアス
   // 参考: http://creator.dwango.co.jp/14128.html
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: unset;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
 
   // iOSにおける選択色をなくす 
   -webkit-tap-highlight-color:rgba(0,0,0,0);
