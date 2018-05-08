@@ -9,12 +9,14 @@ body {
   // 自動カーニング(paltで問題があった場合は、pknaを使用)
   font-feature-settings : "palt" 1;
 
-  // 游ゴシック体優先指定
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  // NotoSansJp
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans JP", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-weight: 500;
 
   // 自動調整機能
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  text-align: justify;
 
   // アンチエイリアス
   // 参考: http://creator.dwango.co.jp/14128.html
@@ -23,6 +25,7 @@ body {
 
   // iOSにおける選択色をなくす 
   -webkit-tap-highlight-color:rgba(0,0,0,0);
+
 }
 
 a {
