@@ -14,7 +14,9 @@ const webpack = require("webpack");
 const webpackConfig = require("./webpack.config");
 
 // 定数
-const SRC = './_src';
+// 【注意】./からはじめると新規ファイルを処理し無いことがある
+// https://qiita.com/sunnyone/items/d92869662e7b7e74f09c
+const SRC = '_src';
 const CONFIG = './_src/config';
 const PUBLIC = './public';
 const BASE_PATH = '';
