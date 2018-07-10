@@ -33,6 +33,7 @@ gulp.task('js', () => {
 gulp.task('pug', () => {
   const locals = readConfig(`${CONFIG}/meta.yml`);
   return gulp.src(`${SRC}/pug/**/[!_]*.pug`)
+    .pipe(plumber())
     .pipe(pug({
       locals: locals,
       pretty: true,
@@ -46,6 +47,7 @@ gulp.task('html', ['pug']);
 gulp.task('sass', () => {
   const config = readConfig(`${CONFIG}/pleeease.json`);
   return gulp.src(`${SRC}/scss/style.scss`)
+    .pipe(plumber())
     .pipe(sassGlob())
     .pipe(sass())
     .pipe(pleeease(config))

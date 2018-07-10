@@ -10,7 +10,7 @@ module.exports = {
   mode: MODE,
   // メインとなるJavascriptファイル(エントリーポイント)
   entry: {
-    "app": "./_src/ts/app.ts"
+    "index": "./_src/ts/index.ts"
     // "common": "./_src/ts/common.ts"
   },  
   output: {

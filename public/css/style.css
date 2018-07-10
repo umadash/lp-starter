@@ -1,3 +1,196 @@
+
+@import url("https://fonts.googleapis.com/earlyaccess/notosansjp.css");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
+
 @charset "UTF-8";
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*,::after,::before{box-sizing:border-box}html{font-size:62.5%}body{font-size:1.6rem;font-feature-settings:"palt" 1;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3",Hiragino Kaku Gothic ProN,Arial,"メイリオ",Meiryo,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-moz-osx-font-smoothing:unset;}@media only screen and (-webkit-min-device-pixel-ratio:2),(min-resolution:2dppx){body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}}a{color:#00f;text-decoration:underline;}a:hover{color:#f00}a:visited{color:#3ea5f8}a:active{color:#0ff}.l-header{position:relative}.footer{position:relative;width:100%;height:200px;background-color:#fff;}.footer_logo{left:48px;}.footer_logo >a{display:block;width:100%;height:100%}.footer_rightBox{position:absolute;right:32px;bottom:32px}.footer .listSnsOfficial{margin:0 0 8px}.footer_copyright{text-align:right;line-height:2;}@include font-size(12);.footer_copyright >a{color:#000}@include mq-small{.footer{position:relative;width:100%;height:106px;background-color:#fff;}.footer_logo >a{display:block;width:100%;height:100%}.footer_rightBox{position:absolute;right:32px;bottom:32px}.footer .listSnsOfficial{margin:0 0 16px}.footer_copyright{text-align:right}@include font-size(12);}.footerBlack{padding:32px 0 16px;background-color:#000;}.footerBlack .listSnsWhite{margin:0 0 24px}.footerBlack_copyright{color:#fff;text-align:center;font-weight:bold;line-height:2;}@include font-size(9);@include font-ubuntu;.footerBlack_copyright >a{color:#fff}@charset "UTF-8";
-.listSns{display:flex;justify-content:space-between;}.listSns .listSnsItem{width:calc(25% - 8px);margin:0 4px;height:60px;}@include max-screen($BP_DESKTOP){height:36px}.listSnsItem{border-radius:4px;background-repeat:no-repeat;background-position:center;}@include min-screen($BP_DESKTOP){.listSnsItem:hover{transition:filter .2s linear;filter:brightness(.7)}}.listSnsItem-facebook{background-image:url("../img/icon_facebook.svg");background-size:17px 30px;background-color:#4c72bb;}@include max-screen($BP_DESKTOP){background-size:10px 17px}.listSnsItem-twitter{background-image:url("../img/icon_twitter.svg");background-size:32px 26px;background-color:#1fa0e4;}@include max-screen($BP_DESKTOP){background-size:19px 15px}.listSnsItem-hatena{background-image:url("../img/icon_hatena.svg");background-size:40px 32px;background-color:#017fde;}@include max-screen($BP_DESKTOP){background-size:19px 18px}.listSnsItem-line{background-image:url("../img/icon_line.svg");background-size:54px 21px;background-color:#00c300;}@include max-screen($BP_DESKTOP){background-size:31px 12px}.listSnsItem >a{display:block;width:100%;height:100%}.youtube{position:relative;width:100%;padding-top:56.25%;}.youtube iframe{position:absolute;top:0;right:0;width:100%;height:100%}.u-clearfix{zoom:1;}.u-clearfix:before,.u-clearfix:after{content:"";display:table}.u-clearfix:after{clear:both}/*# sourceMappingURL=style.css.map */
+/* ===========================
+  Foundation
+=========================== */
+/* Mixin
+----------------------------------------------------------------- */
+/**
+* 絶対位置で配置する
+*/
+/**
+* clearfix
+*/
+/** NotoSansJp **/
+/** MavenPro **/
+/** Roboto **/
+/**
+* remに対応していないブラウザ用
+*/
+/* Variable 
+----------------------------------------------------------------- */
+/* Reset
+----------------------------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/** 追加 **/
+*, :after, :before {
+  box-sizing: border-box; }
+
+/* Base
+----------------------------------------------------------------- */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+  -webkit-font-feature-settings: "palt" 1;
+     -moz-font-feature-settings: "palt" 1;
+          font-feature-settings: "palt" 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans JP", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-weight: 500;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-align: justify;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+a {
+  text-decoration: underline; }
+
+/* ===========================
+  Layout
+=========================== */
+/* ===========================
+  Object
+======================== */
+/* Component 再利用できる小さな単位のモジュール
+   ----------------------------------------------------------------- */
+.footerBlack {
+  padding: 32px 0 16px;
+  background-color: #000; }
+  .footerBlack .listSnsWhite {
+    margin: 0 0 24px; }
+  .footerBlack_copyright {
+    color: #fff;
+    text-align: center;
+    font-size: 9px;
+    font-size: 9px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 2; }
+    .footerBlack_copyright > a {
+      color: #fff; }
+
+.listSns {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .listSns .listSnsItem {
+    width: calc(25% - 8px);
+    margin: 0 4px;
+    height: 60px; }
+
+.listSnsItem {
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .listSnsItem-facebook {
+    background-image: url("../img/icon_facebook.svg");
+    background-size: 17px 30px;
+    background-color: #4c72bb; }
+    @media screen and (max-width: 1023px) {
+      .listSnsItem-facebook {
+        background-size: 10px 17px; } }
+  .listSnsItem-twitter {
+    background-image: url("../img/icon_twitter.svg");
+    background-size: 32px 26px;
+    background-color: #1fa0e4; }
+    @media screen and (max-width: 1023px) {
+      .listSnsItem-twitter {
+        background-size: 19px 15px; } }
+  .listSnsItem-hatena {
+    background-image: url("../img/icon_hatena.svg");
+    background-size: 40px 32px;
+    background-color: #017fde; }
+    @media screen and (max-width: 1023px) {
+      .listSnsItem-hatena {
+        background-size: 19px 18px; } }
+  .listSnsItem-line {
+    background-image: url("../img/icon_line.svg");
+    background-size: 54px 21px;
+    background-color: #00c300; }
+    @media screen and (max-width: 1023px) {
+      .listSnsItem-line {
+        background-size: 31px 12px; } }
+  .listSnsItem > a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.youtube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; }
+  .youtube iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; }
+
+/* Project プロジェクト固有のパターンであり、いくつかのComponentと、それに該当しない要素によって構成されるものを定義
+   ----------------------------------------------------------------- */
+/* Utility ComponentとProjectレイヤーのObjectのモディファイアで解決することが難しい・適切では無い、わずかなスタイルの調整のための便利クラスなどを定義
+   ----------------------------------------------------------------- */
+.u-clearfix {
+  zoom: 1; }
+  .u-clearfix:before, .u-clearfix:after {
+    content: "";
+    display: table; }
+  .u-clearfix:after {
+    clear: both; }
