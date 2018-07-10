@@ -41,12 +41,10 @@ module.exports = {
       '.ts'
     ]
   },
-  plugins: [
-    // 指定した変数を他のモジュール内で使えるようにする
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    }) 
-  ],
+  externals: [
+    {
+      $: 'jQuery',
+      jQuery: 'jQuery',
+    }
+  ]
 };
